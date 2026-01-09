@@ -1,36 +1,36 @@
-// class CreatePencil{
-//     constructor(name, company, price, color ){ //yeh pehla element hota hai jo chalta hai jab object create krte hai class ka
-//         this.name = name ;
-//         this.company = company ;
-//         this.price = price ;
-//         this.color = color;
+class CreatePencil{
+    constructor(name, company, price, color ){ //yeh pehla element hota hai jo chalta hai jab object create krte hai class ka
+        this.name = name ;
+        this.company = company ;
+        this.price = price ;
+        this.color = color;
 
-//     }
-//     // constructor me sare variable define krdiye ab uske bahar apne methods deffine krdenge
+    }
+    // constructor me sare variable define krdiye ab uske bahar apne methods deffine krdenge
     
-//     erase(){
-//         //arrow function apni value hamesha parent se leta hai
-//         document.body.querySelectorAll("h1").forEach((elem) => {
-//             //elem.remove(); //isse saare banaye huye elements remove hojayenge.
-//             //agr sirf ek hi colour ki pencil ko remove krna hai toh 
-//             if(elem.style.color === this.color){
-//                 elem.remove();
-//             }
-//         })
-//     }
+    erase(){
+        //arrow function apni value hamesha parent se leta hai
+        document.body.querySelectorAll("h1").forEach((elem) => {
+            //elem.remove(); //isse saare banaye huye elements remove hojayenge.
+            //agr sirf ek hi colour ki pencil ko remove krna hai toh 
+            if(elem.style.color === this.color){
+                elem.remove();
+            }
+        })
+    }
 
-//     write(text){
-//         let h1 = document.createElement("h1")
-//         h1.textContent = text ;
-//         h1.style.color = this.color ;
-//         document.body.append(h1)
-//     }
-// }
+    write(text){
+        let h1 = document.createElement("h1")
+        h1.textContent = text ;
+        h1.style.color = this.color ;
+        document.body.append(h1)
+    }
+}
 
-// //now creating objects--instance of class 
+//now creating objects--instance of class 
 
-// let p1 = new CreatePencil("nataraj", "nataraj", 10, "black")
-// let p2 = new CreatePencil("doms" , "doms", 15 , "blue")
+let p1 = new CreatePencil("nataraj", "nataraj", 10, "black")
+let p2 = new CreatePencil("doms" , "doms", 15 , "blue")
 
 
 //extends and supers
@@ -66,3 +66,12 @@ class Admin extends User { //is admin class ke pas woh sab hoga jo ek user ke pa
 let u1 = new User ("harsh" , "bhopal" , "async123", "adb@gmail.com" )
 let u2 = new User ("harshita" , "hopal" , "async122", "acb@gmail.com")
 let u3 = new Admin ("harshta" , "bhpal" , "asyn122", "ab@gmail.com")
+
+
+///the above form discussed was called classical inheritance . it is present in all languages 
+
+//in js earler we didnt had any 'class' concept. thhus we used to make inheritance through objects. 
+//this was called as prototypal inheritance . ek object aap chaho toh uski saari values (props/methods) ko inherit kra dete ho doosre object me .
+
+let a = {}
+let b = Object.create(a) //now b will be able to inherit all properties of a.
