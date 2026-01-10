@@ -158,6 +158,22 @@ Built a dynamic user card generator that showcases:
 
 ---
 
+### Deployed Project Links
+
+1. **Toast Notifications**  
+   - **Description:** A lightweight toaster that shows transient toast messages on the screen using a closure-based factory.  
+   - **Link:** [Toast Notifications](https://fawahkhan.github.io/Project-10-Toast-Notifications-JS-Closures/)
+
+2. **Project 11 – `this` Keyword & Form-Driven UI**  
+   - **Description:** A small web app that collects user details from a form, stores them as objects, and renders profile cards dynamically.  
+   - **Link:** [Form-Driven UI](https://fawahkhan.github.io/Project-11-this-Keyword-Form-Driven-UI/)
+
+3. **Random User Cards Generator**  
+   - **Description:** A web application that dynamically fetches and displays random user profiles as interactive cards.  
+   - **Link:** [Random User Cards Generator](https://fawahkhan.github.io/Project-12-Random-User-Cards-Generator/)  
+
+---
+
 ## 🛠️ Technologies Used
 
 - **JavaScript (ES6+)**
