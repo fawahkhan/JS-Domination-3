@@ -23,3 +23,4 @@ async function abcd(){
         console.log(err)
     }
 }
+abcd() ;
