@@ -4,6 +4,8 @@
 
 The **Random User Cards Generator** is a web application that dynamically fetches and displays random user profiles as interactive cards. This project demonstrates how to consume public APIs, manipulate the DOM, and create visually appealing user interfaces using JavaScript.
 
+**Link** - https://fawahkhan.github.io/Project-12-Random-User-Cards-Generator/
+
 ## Features
 
 - Fetches random user data from an external API
